@@ -56,9 +56,6 @@ git branch new_branch   # Create a new branch
 git checkout branch_name # Switch to a branch
 git branch -d branch_name# Delete a branch
 
-
-Entiendo tu frustración. Aquí está todo el contenido en un solo bloque para que puedas copiar y pegar fácilmente:
-
 markdown
 Copy code
 # My Web Design Application
