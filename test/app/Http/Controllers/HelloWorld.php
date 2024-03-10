@@ -1,15 +1,23 @@
 <?php 
-namespace App\Http\Controllers; 
-use Illuminate\Http\Request; 
-use App\Hello; // Very important to import the model 
-//use App\Nombre; // Very important to import the model here
-class HelloWorld extends Controller 
-{ 
-  public function sayHello() 
-  { 
-    $helloW = Hello::helloWorldMessage();
-    $funcion = Hello::nombreMessage();
-    return view('hello', compact('helloW', 'funcion'));
-  } 
-  
-} 
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class HelloWorld extends Controller
+{
+    public function index()
+    {
+        return view('hello');
+    }
+
+    public function create()
+    {
+        return view('create');
+    }
+
+    public function edit()
+    {
+        return view('edit');
+    }
+}
